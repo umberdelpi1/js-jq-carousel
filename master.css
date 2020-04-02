@@ -7,7 +7,7 @@
 
 /******************** imposto le regole del contenitore-slide ********************/
 .contenitore-slide {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,9 +15,11 @@
 }
 
 /******************** imposto le regole del contenitore img *******************/
+
 /* imposto larghezza contenitore .image per centrarlo con width all'80% */
 .image {
   width: 80%;
+  /* margin: 0 auto; ****** non inserisco xkè somma il blocco img 100% al margin:0 auto */
 }
 /* imposto larghezza tot 100% dell'img - assegno display:none per nasconderle tutte */
 /* in seguito attiverò solo la prima con un .active in display:inli-block */
@@ -29,4 +31,34 @@
 
 .image img.active {
   display: inline-block;
+}
+
+/******************** imposto le regole icon navigazione *******************/
+
+.icon-prev i, .icon-next i {
+  font-size: 40px;
+  color: grey;
+}
+
+.icon-prev i:hover, .icon-next i:hover {
+  color: black;
+  font-size: 45px;
+  transition: 1s;
+}
+
+/******************** imposto le regole pallini navigazione *******************/
+.navigazione {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 20px;
+}
+.navigazione i {
+  font-size: 20px;
+  color: grey;
+}
+
+.navigazione i:hover {
+  color: black;
+  font-size: 22px;
+  transition: 1s;
 }
