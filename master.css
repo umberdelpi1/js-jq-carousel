@@ -1,0 +1,32 @@
+/* regole generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/******************** imposto le regole del contenitore-slide ********************/
+.contenitore-slide {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+/******************** imposto le regole del contenitore img *******************/
+/* imposto larghezza contenitore .image per centrarlo con width all'80% */
+.image {
+  width: 80%;
+}
+/* imposto larghezza tot 100% dell'img - assegno display:none per nasconderle tutte */
+/* in seguito attiverò solo la prima con un .active in display:inli-block */
+
+.image img {
+  width: 100%;
+  display: none;
+}
+
+.image img.active {
+  display: inline-block;
+}
