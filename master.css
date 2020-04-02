@@ -27,6 +27,7 @@
 .image img {
   width: 100%;
   display: none;
+
 }
 
 .image img.active {
@@ -42,7 +43,7 @@
 
 .icon-prev i:hover, .icon-next i:hover {
   color: black;
-  font-size: 45px;
+  font-size: 43px;
   transition: 1s;
 }
 
@@ -52,13 +53,13 @@
   margin: 0 auto;
   bottom: 20px;
 }
+
+/* solo al pallino i con active do il colore rosso */
+.navigazione i:active:hover {
+  color: grey;
+  font-size: 22px;
+}
 .navigazione i {
   font-size: 20px;
-  color: grey;
-}
-
-.navigazione i:hover {
-  color: black;
-  font-size: 22px;
-  transition: 1s;
+  color: rgba(140,140,140,.78);
 }
