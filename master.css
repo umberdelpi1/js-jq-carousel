@@ -27,11 +27,16 @@
 .image img {
   width: 100%;
   display: none;
-
 }
 
 .image img.active {
   display: inline-block;
+  box-shadow: 5px 5px 10px 10px rgba(185,185,185,.9);
+}
+
+.image img.active:hover {
+  background-color: black;
+  transition: 2s;
 }
 
 /******************** imposto le regole icon navigazione *******************/
@@ -44,7 +49,7 @@
 .icon-prev i:hover, .icon-next i:hover {
   color: black;
   font-size: 43px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 /******************** imposto le regole pallini navigazione *******************/
@@ -55,9 +60,10 @@
 }
 
 /* solo al pallino i con active do il colore rosso */
-.navigazione i:active:hover {
-  color: grey;
-  font-size: 22px;
+.navigazione i.active {
+  color: rgb(105,105,105);
+  font-size: 25px;
+  transition: 0.8s;
 }
 .navigazione i {
   font-size: 20px;
